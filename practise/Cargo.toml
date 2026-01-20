@@ -1,0 +1,15 @@
+[package]
+name = "practise"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+esp32-hal = "0.18.1"
+panic-halt = "1.0.0"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
